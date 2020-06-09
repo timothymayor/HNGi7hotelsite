@@ -5,6 +5,7 @@
 	<title>Homepage</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./public/lib/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="public/css/style.css">
 </head>
 <body>
@@ -12,17 +13,34 @@
 	----------------------------------------------------------------------------------------------------------->
 
 	<header>
-	<div class="header">
-		<div class="logo"><span class="restLogo">Rest.</span></div> 
-		<nav class="nav">
-			<ul  class="ul">
-				<li class="home"><a href="#">Home</a></li>
-				<li class="rooms"><a href="#">Rooms and rates</a></li>
-				<li class="facilities"><a href="#">Facilities</a></li>
-				<li class="contact"><a href="#">Contact us</a></li>
-			</ul>
-		</nav>
-	</div>
+	 <div id="logoDiv">
+            <!-- <img src="./public/logo.jpg" alt="logo" id="logo"> -->
+            <span class="restLogo">Rest.</span>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light justify-content-end navbar-custom">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+  
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <ul class="navbar-nav ">
+                <li class="nav-item" >
+                  <a class="nav-link colorme" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="rooms.html">Rooms and Rates</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="facilities.html">Facilities</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+              </ul> 
+            </div>
+  
+          </nav>
 </header>
 <div id="Fiyinbody">
 	<div class="fiyinRest">
@@ -47,7 +65,7 @@
 		<div class="check"><h4>PERSON</h4><br>
 			<span>Sun, 19 Aug,2020 <span class="arrow"></span></span>
 		</div>
-		<div class="check btn">Book Now</div>
+		<div class="check btnn">Book Now</div>
 	</div>
 </div>
 <!-------------------------------------------FIYIN ENDS HERE-------------------------------------------
@@ -136,5 +154,7 @@
 		</div>		
 		
 	</footer>
+<script src="./public/js/jquery-3.4.1.min.js"></script>
+<script src="./public/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,532 @@
+/*-------------------------------------------FIYIN STARTS HERE-------------------------------------------
+	-----------------------------------------------------------------------------------------------------------*/
+@font-face{
+	font-family: "Playfair Display";
+	src: url('../lib/PlayfairDisplay-VariableFont_wght.ttf') format('truetype'); 
+}
+@font-face{
+	font-family: "Muli";
+	src: url('../lib/Muli-VariableFont_wght.ttf') format('truetype');
+}
+@font-face{
+	font-family: "Lato";
+	src: url('../lib/Lato-Bold.ttf') format('truetype');
+}
+
+header {
+	width: 80%;
+	margin:0 auto;
+}
+.header {
+	display: flex;
+	flex-direction: row;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	widows: 100%;
+}
+.nav {
+	flex:2;
+	margin-left: 11%;
+}
+.ul {
+	display: flex;
+	flex-direction: row;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo{
+	flex: 1;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 64px;
+    list-style: none;
+    color: #0D3644;
+    
+
+}
+.restLogo {
+	border-bottom: 1px solid #f6ae2d;
+}
+
+a{text-decoration: none;
+color: rgba(13,54,68,0.6);}
+.home{
+	flex:1;
+    width: 45px;
+    height: 24px;
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    list-style: none;
+    color: #0D3644;
+}
+.rooms{
+    flex: 1;
+    width: 128px;
+    height: 24px;
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    list-style: none;
+    color: #0D3644;
+}
+.facilities{
+	flex: 1;
+    width: 66px;
+    height: 24px;
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    list-style: none;
+    color: #0D3644;
+}
+   .contact{
+   	flex:1;
+    width: 81px;
+    height: 24px;
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    list-style: none;
+    color: #0D3644;
+}
+#Fiyinbody {
+	width:80%;
+	margin:0px auto;
+	margin-top: 0px;
+}
+    .resting{
+        width: 422px;
+        height: 128px;
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 64px;
+        color: #0D3644;
+    }
+    div.fiyinRest {
+    display: flex;
+	flex-direction: row;
+	align-items: center;
+    }
+    
+    
+    .restBody {
+		flex: 1;
+		height: 35em;
+		justify-content: flex-end;
+		margin-top: 5em;
+		padding-top: 2em;
+    }
+    .rectangle {
+    	flex: 2;
+    	position: relative;
+    	margin-left:10%;
+    	height: 35em;
+    	border: none;
+    	z-index: -1;
+    }
+    .resting {
+    	margin-top: 4em;
+    }
+    .view{
+        width: 715px;
+        height: 100%;
+        -webkit-box-shadow: 2px 2px 3px 4px #ccc;
+  		-moz-box-shadow:    2px 2px 3px 4px #ccc;
+ 		 box-shadow:         2px 2px 3px 4px #ccc;
+ 		 z-index: 1;
+        }
+    .play{
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        top: 15em;
+        left:20em;
+   		border: 3px solid #ffffff;
+ 		z-index: 1;
+ 		border-radius: 100%;
+    }
+
+    .arrow {
+    	display: inline-block;
+    	mask-image:url("../public/arrow.svg");
+    	mask-size: cover;
+    	width:10px;
+    	height:10px;
+    	background:#F6AE2D;
+    	clip-path: polygon(0 0, 49% 100%, 100% 0);
+    }
+    .quote{
+        width: 351px;
+        height: 48px;
+        font-family: Muli;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: #0D3644;
+    }
+    
+    .holder{
+        width: 195px;
+        height: 64px;
+        background: #F6AE2D;
+    }
+
+    .rect{
+    	margin-top: -6em;
+    	display: flex;
+    	flex-flow: row wrap;
+    	justify-content: space-around;
+    	align-items: center;
+        width: 50em;
+        height: 140px;
+        background: #F7F7F7;
+        z-index: 1 !important;
+        line-height: 4px;
+        padding-left: 40px;
+    }
+
+    .btn{
+    	background: #F6AE2D;
+    	width: 6em;
+    	color: white;
+    	height: 2em;
+    	text-align: center;
+    	font-size:16px;
+    	padding-top: 30px;
+    }
+    .btn-btn{
+		color:white;
+		
+		
+		background-color: none;
+		align-items: center;
+		
+    }
+
+    .check{
+    }
+
+/*-------------------------------------------FIYIN ENDS HERE-------------------------------------------
+	-----------------------------------------------------------------------------------------------------------*/
+
+
+body{
+	min-height: 100%;
+	margin: 0px;
+}
+
+	/*-------------------------------------------DEBUGGGER STARTS HERE-------------------------------------------
+	-----------------------------------------------------------------------------------------------------------*/
+
+.main {
+	width: 80%;
+	margin:0 auto;
+	margin-bottom: 35px;
+	min-height: 100%;
+	margin-top: 50px;
+
+}
+.h-Atypical {
+	font-family: Playfair Display;
+	font-weight: bold;
+	margin-bottom: 0px;
+	color:#0d3644;
+}
+.rest {
+	border-bottom: 1px solid #f6ae2d;
+}
+.atypical-Con {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.Atypical{
+	font-size: 16px;
+	font-style: normal;
+	line-height: 24px;
+	padding: 2em 5em 5em 5em;
+	font-family: Muli;
+	text-align: justify;
+
+}
+
+.poolLong {
+	  -webkit-box-shadow: 2px 2px 3px 3px #ccc;
+  -moz-box-shadow:    2px 2px 3px 3px #ccc;
+  box-shadow:         2px 2px 3px 3px #ccc;
+}
+
+.Suites{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	font-family: Playfair Display;
+	margin: 70px 0px 70px 0px;
+}
+
+.roomSuites{
+	flex: 1;
+	font-family: Playfair Display;
+	font-size: 32px;
+	color:#0d3644;
+	font-weight: bold;
+	font-style: normal;
+	line-height: 44px;
+}
+
+.suitesText {
+	flex: 2;
+	justify-content: flex-end;
+	padding: 0px 0px 0px 500px;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 24px;
+	font-family: Muli;
+	color:#0d3644;
+
+}
+
+.rooms{
+	width:100%;
+	display: flex;
+	flex-direction: row;
+	flex-flow: row wrap;
+	flex-wrap: wrap;
+}
+
+.room1 {
+	flex: 2;
+	position: relative;
+}
+
+.room2 {
+	flex: 1;
+	position: relative;
+}
+
+.room3 {
+	flex: 3;
+	position: relative;
+}
+
+.roomImg1{
+	min-width:99%; 
+	height:20em;
+	overflow: hidden;
+}
+.roomImg2{
+min-width:100%;
+height:20em;
+overflow: hidden;
+
+}
+.roomImg3{
+min-width:100%;
+height: 20em;
+overflow: hidden;
+margin-top: 6px;
+}
+
+.Book1, .Book2, .Book3, .Book4, .Gold, .Stan, .Silver {
+	position: absolute;
+	color: white;
+}
+
+.Book1, .Book2, .Book3 {
+	right: 5em;
+	top: 2em;
+	border: 1px solid white ;
+	padding: 10px;
+	font-family: Lato;
+}
+
+.Gold, .Stan, .Silver {
+	bottom: 1em;
+	left: 3em;
+	font-family: Playfair Display;
+	font-weight: bold;
+	font-size: 24px;
+	font-style: normal;
+	line-height: 44px;
+}
+.rate {
+	font-family: Lato;
+	font-size: 14px;
+	font-weight: bold;
+	color: rgba(255,255,255,0.6);
+}
+
+@media only screen and (max-width: 1442px ) {
+	.roomSuites {
+		flex: 1;
+	}
+	.suitesText{
+		flex:1;
+		padding:0px;
+	}
+}
+
+@media only screen and (max-width: 1047px ) {
+	.rooms{
+		flex-direction: column;
+		flex-flow: column;
+	flex-wrap: nowrap;
+	}
+	.roomImg1{
+		width: 100%;
+	}
+	.roomImg2{
+		width: 100%;
+	}
+	.roomImg3 {
+		width: 100%;
+	}
+	.roomSuites {
+		flex: 1;
+	}
+	.suitesText{
+		flex:1;
+		padding:0px;
+	}
+}
+/*-------------------------------------------DEBUGGGER ENDS HERE-------------------------------------------
+	-----------------------------------------------------------------------------------------------------------*/
+	input[type=button] {
+	width: auto;
+	padding: 1em 2rem;
+	background: #F6AE2D;
+	color: #FFFFFF;
+	border: none;
+}
+
+.offer {
+	width: 35%;
+	margin-left: 16%;
+	font-family: Playfair Display;
+	font-size: 24px;
+	color: white;
+
+}
+.count {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+ 	font-size: 16px;
+ 	color: white;
+ 	width: 80%;
+ 	margin: 0 auto;
+
+}
+.stat{
+	flex:1;
+	margin-left: 8%;
+}
+.stat p {
+	font-size: 12px;
+	opacity: 0.7;
+}
+.counter {
+	margin-top: 50em;
+	background: #0D3644;
+	padding: 3rem 0;
+	height: 16em;
+}
+.sign-up {
+	text-align: center;
+	width: 100%;
+	line-height: 2em;
+	text-align: center;
+	color:#0D3644;
+	}
+.every {
+	font-family: Lato;
+	font-size: 14px;
+	opacity: 0.7;
+}
+
+.endFooter {
+	display: flex;
+	flex-flow: row;
+	flex-direction: row;
+	width: 100%;
+	background: #e5e5e5;
+	margin-top: 1em;
+}
+.end {
+	flex:1;
+}
+
+@media screen and ( max-width: 1310px) {
+	.atypical-Con {
+		display: block;
+	}
+	.Atypical {
+		padding: 20px;
+	}
+}
+
+@media screen and (max-width: 1048px) {
+	.counter {
+		margin-top: 65em;
+	}
+
+	.rect {
+		padding-left: 0px;
+		width: auto;
+	}
+}
+
+@media screen and (max-width:740px ) {
+	.atypical-Con:nth-child(2) {
+		display: none;
+	}
+
+	.ul{
+		flex-flow: column;
+		flex-direction: column;
+	}
+	.rooms {
+		width: auto;
+	}
+}
+
+@media screen and (max-width: 620px) {
+	.rectangle {
+		display: none;
+	}
+
+	.restBody {
+		margin-top: 0px;
+		padding-top: 0px;		
+	}
+
+	.resting {
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+
+	.rect {
+		margin-top: -20em;
+	}
+}

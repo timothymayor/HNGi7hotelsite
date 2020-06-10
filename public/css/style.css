@@ -1,16 +1,8 @@
-/*-------------------------------------------FIYIN STARTS HERE-------------------------------------------
-	-----------------------------------------------------------------------------------------------------------*/
-/*@font-face{
-	font-family: "Playfair Display";
-	src: url('../lib/PlayfairDisplay-VariableFont_wght.ttf') format('truetype'); 
-}
-@font-face{
-	font-family: "Muli";
-	src: url('../lib/Muli-VariableFont_wght.ttf') format('truetype');
-}*/
+
 body{
 	padding: 0;
 	margin: 0px;
+	box-sizing: border-box;
 }
 
 @font-face{
@@ -27,7 +19,7 @@ header {
 header{
     display: grid;
     grid-template-columns: 50% 50%;
-    margin: 0px 0px 0px 4%;
+    margin: 0px 0px 0px 0%;
     padding: 0%;
 
 }
@@ -129,7 +121,7 @@ color: rgba(13,54,68,0.6);}
 	margin-top: 0px;
 }*/
     .resting{
-        width: 100%;
+        /*width: 100%;*/
         font-family: Playfair Display;
         font-style: normal;
         font-weight: bold;
@@ -144,12 +136,18 @@ color: rgba(13,54,68,0.6);}
     }*/
     
     
-    .restBody {
+    /*.restBody {
 		flex: 1;
 		height: 35em;
 		justify-content: flex-end;
 		margin-top: 5em;
 		padding-top: 2em;
+    }*/
+    .signuph2 {
+    	text-align: center; margin: 20px 0;
+    }
+    .signup-p {
+    	text-align: center; margin: 20px 0;
     }
     .rectangle {
     	flex: 2;
@@ -165,9 +163,9 @@ color: rgba(13,54,68,0.6);}
     .view{
         width: 100%;
         height: 100%;
-        -webkit-box-shadow: 2px 2px 3px 4px #ccc;
-  		-moz-box-shadow:    2px 2px 3px 4px #ccc;
- 		 box-shadow:         2px 2px 3px 4px #ccc;
+        -webkit-box-shadow: 0px 0px 5px .5px #888888;
+  		-moz-box-shadow:    0px 0px 5px .5px #888888;
+ 		 box-shadow:         0px 0px 5px .5px #888888;
  		 z-index: 1;
         }
     .play{
@@ -175,7 +173,7 @@ color: rgba(13,54,68,0.6);}
         height: 32px;
         position: absolute;
         top: 15em;
-        left:20em;
+        left:5em;
    		border: 3px solid #ffffff;
  		z-index: 1;
  		border-radius: 100%;
@@ -185,8 +183,9 @@ color: rgba(13,54,68,0.6);}
     	display: inline-block;
     	mask-image:url("../public/arrow.svg");
     	mask-size: cover;
-    	width:10px;
-    	height:10px;
+    	width:4%;
+    	padding: 0.3rem;
+    	/*height:10px;*/
     	background:#F6AE2D;
     	clip-path: polygon(0 0, 49% 100%, 100% 0);
     }
@@ -223,12 +222,12 @@ color: rgba(13,54,68,0.6);}
 
     .btnn{
     	background: #F6AE2D;
-    	width: 6em;
+    	width: 100%;
     	color: white;
-    	height: 4em;
     	text-align: center;
+    	margin: 1em 1em 1em 0;
     	font-size:16px;
-    	padding-top: 30px;
+    	padding:20px;
     }
     .btn-btn{
 		color:white;
@@ -239,13 +238,9 @@ color: rgba(13,54,68,0.6);}
 
     .check{
     }
-
-/*-------------------------------------------FIYIN ENDS HERE-------------------------------------------
-	-----------------------------------------------------------------------------------------------------------*/
-
-	/*-------------------------------------------DEBUGGGER STARTS HERE-------------------------------------------
-	-----------------------------------------------------------------------------------------------------------*/
-
+.check {
+	background-color: #f1f1f1f1; position: absolute; top: 630px; width: 80%; padding: 1em 0 1em 5em
+}
 .h-Atypical {
 	font-weight: bold;
 	margin: 100px 0 20px 0;
@@ -279,10 +274,6 @@ color: rgba(13,54,68,0.6);}
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	  -webkit-box-shadow: 2px 2px 3px 3px #ccc;
-  -moz-box-shadow:    2px 2px 3px 3px #ccc;
-  box-shadow:         2px 2px 3px 3px #ccc;
-
 }
 
 .Suites{
@@ -323,11 +314,6 @@ color: rgba(13,54,68,0.6);}
 	flex-wrap: wrap;
 }
 
-.room3 {
-	flex: 3;
-	position: relative;
-}
-
 .roomImg1{
 	width:100%; 
 	height:20em;
@@ -359,7 +345,7 @@ margin-top: 6px;
 	right: 5em;
 	top: 2em;
 	border: 1px solid white ;
-	padding: 10px;
+	padding: 1%;
 	font-family: Lato;
 }
 
@@ -478,51 +464,10 @@ footer {
 	text-align: center;
 }
 
-/*@media screen and ( max-width: 1310px) {
-	.atypical-Con {
-		display: block;
-	}
-	.Atypical {
-		padding: 20px;
-	}
+
+@media only screen and (max-width: 600px) {
+  .padding {
+  	padding: 1rem;
+  }
+
 }
-
-@media screen and (max-width: 1048px) {
-	.counter {
-		margin-top: 65em;
-	}
-
-	.rect {
-		padding-left: 0px;
-		width: auto;
-	}
-}
-
-@media screen and (max-width:740px ) {
-	.atypical-Con:nth-child(2) {
-		display: none;
-	}
-
-	.ul{
-		flex-flow: column;
-		flex-direction: column;
-	}
-	.rooms {
-		width: auto;
-	}
-}
-
-@media screen and (max-width: 620px) {
-	.rectangle {
-		display: none;
-	}
-
-	.restBody {
-		margin-top: 0px;
-		padding-top: 0px;		
-	}
-
-	.rect {
-		margin-top: -20em;
-	}
-}*/

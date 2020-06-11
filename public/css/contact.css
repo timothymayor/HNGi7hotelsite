@@ -1,7 +1,5 @@
-.input-text {
-    width: 70%;
-    padding-top: 0.3em;
-    margin-left: 22%;
+.frm-line {
+    margin: 40px 0;
 }
 .contact-btn {
     background-color: #0D3644 !important;
@@ -12,35 +10,46 @@
     margin-right: 3%;
     border-radius: 0 !important;
 }
-.input-subject {
-    width: 70%;
-    padding-top: 0.3em;
-    margin-left: 21%;
-}
-.input-mail {
-    width: 70%;
-    padding-top: 0.3em;
-    margin-left: 16%;
-}
 .contact-title {
     margin-top: 200px;
     font-family: Playfair Display;
     padding-left: 12%;
 }
-#nameLabel {
-    display: inline;
+
+.input-text {
+    width: 70%;
+    padding: 0.3em;
+    margin-left: 21%;
+}
+
+.input-subject {
+    width: 70%;
+    padding: 0.3em;
+    margin-left: 21%;
+}
+.input-mail {
+    width: 70%;
+    padding: 0.3em;
+    margin-left: 21%;
 }
 textarea {
    width: 70%;
-    padding-top: 0.3em;
+    padding: 4em;
     margin-left: 20%;
+    border: 1px solid #000;
+}
+#nameLabel {
+    display: inline;
+}
+.textarea-label {
+    /*position: absolute;*/
 }
 .contact-image {
     width: 100%; height: 50vh; margin-right: 0;
 }
 .form-div {
     width: 100%;
-    padding: 1em 0 1em 2em;
+    padding: 0;
     margin-top: 100px;
     border: 1px solid pink;
 }
@@ -50,7 +59,15 @@ textarea {
 }
 
 @media (max-width: 600px) {
-  
+  .contact-btn {
+    background-color: #0D3644 !important;
+    float: right;
+    width: 60%;
+    color: #fff;
+    padding: 0px;
+    margin-right: 20%;
+    border-radius: 0 !important;
+}
   .col-left {
     margin-left: 0;
     text-align: center;
@@ -60,54 +77,47 @@ textarea {
     text-align: center;
   }
   .input-text {
-    width: 50%;
+    width: 60%;
     padding-top: 0.3em;
     display: block;
     border: 1px solid black;
 }
-.contact-btn {
-    background-color: #0D3644 !important;
-    float: right;
-    width: 20%;
-    color: #fff;
-    padding: 10px;
-    margin-right: 45%;
-    border-radius: 0 !important;
-}
 .input-subject {
     display: block;
-    width: 50%;
+    width: 60%;
     padding-top: 0.3em;
     border: 1px solid black;
     
 }
 .input-mail {
     display: block;
-    margin-left: 5em;
-    width: 50%;
-    padding-top: 0.3em;
+    /*margin-left: 5em;*/
+    width: 60%;
+    padding: 0.3em;
     border: 1px solid black;
     
 }
-.contact-title {
-    margin-top: 200px;
-    font-family: Playfair Display;
-    
-}
 textarea {
-   width: 50%;
-    padding-top: 0.3em;
+   width: 60%;
+    padding: 5em;
  display: block;
  border: 1px solid black;   
 }
 .form-div {
+    text-align: center;
     width: 100%;
-    padding: 1em ;
-    margin-top: 100px;
+    /*padding: 1em ;*/
+    margin: 10px;
     border: 1px solid pink;
 }
 #nameLabel {
     display: block;
     text-align: center;
+}
+.contact-title {
+    text-align: center;
+    /*margin-top: 200px;*/
+    font-family: Playfair Display;
+    
 }
 }

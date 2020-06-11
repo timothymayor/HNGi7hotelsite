@@ -5,92 +5,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./public/lib/bootstrap.min.css">
     <link rel="stylesheet" href="./public/css/contact.css">
-
+    <link rel="stylesheet" href="./public/css/style.css">
     <title>Contact Us</title>
 </head>
 <body>
     <header>
         <div id="logoDiv">
-            <!-- <img src="./public/logo.jpg" alt="logo" id="logo"> -->
-            Rest.
+                <!-- <img src="./public/logo.jpg" alt="logo" id="logo"> -->
+            <span class="restLogo">Rest.</span>
         </div>
         <nav class="navbar navbar-expand-lg navbar-light justify-content-end navbar-custom">
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+                  <span class="navbar-toggler-icon"></span>
             </button>
-  
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-              <ul class="navbar-nav ">
-                <li class="nav-item" >
-                  <a class="nav-link colorme" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="rooms.html">Rooms and Rates</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="facilities.html">Facilities</a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="contact.html">Contact Us</a>
-                </li>
-              </ul> 
+                <ul class="navbar-nav">
+                    <li class="nav-item" >
+                      <a class="nav-link " href="index.html"> Home <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="rooms.html">Rooms&nbspand&nbspRates</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="facilities.html">Facilities</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="contact.html">Contact&nbspUs</a>
+                    </li>
+                </ul> 
             </div>
-  
-          </nav>
+        </nav>
     </header>
-    <section id="heading">
-        <h2>Contact Us</h2>
-        <div id="hotelImageDiv">
-            <img src="./public/images/hello.jpg" alt="hotelImage">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-5">
+                <h1 class="contact-title">Contact Us</h1>
+            </div>
+            <div class="col-sm-7">
+                <img src="./public/images/hello.jpg" class="contact-image">
+            </div>
         </div>
-    </section>
-
-    <div id="formDiv">
-        <form action="" role="form" id="registrationForm">
-            <div class="formInput">
-                <label for="name" id="nameLabel">Name</label>
-                <input type="text" name="name" id="name">
-                <p class="feedback"></p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10 form-div">
+                    <form class="">
+                        <div class="form-group">
+                             <label for="name" id="nameLabel">Name</label>
+                             <input type="text" name="name" id="name" class="input-text">
+                             <p class="feedback"></p>
+                        </div>
+                        <div class="form-group">
+                             <label for="name" id="nameLabel" >Email Address</label>
+                             <input type="email" name="name" id="name" class="input-mail">
+                             <p class="feedback"></p>
+                        </div>
+                        <div class="form-group">
+                             <label for="name" id="nameLabel">Subject</label>
+                             <input type="text" name="name" id="name" class="input-subject">
+                             <p class="feedback"></p>
+                        </div>
+                        <div class="form-group" id="nameLabel">
+                          <label for="comment">Message</label>
+                          <textarea ></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary contact-btn ">Submit</button>
+                    </form>
+                </div>
             </div>
-    
-            <div class="formInput">
-                <label for="email" id="emailLabel">Email Address</label>
-                <input type="email" name="email" id="email">
-                <p class="feedback"></p>
-            </div>
-            
-            <div class="formInput">
-                <label for="subject" id="subjectLabel">Subject</label>
-                <input type="text" name="subject" id="subject">
-                <p class="feedback"></p>
-            </div>
-    
-            <div class="formInput">
-                <label for="message" id="messageLabel">Message</label>
-                <textarea name="message" id="message" rows="4" cols="50">
-                </textarea>
-                <p class="feedback"></p>
-            </div>        
-            
-          
-                <button type="submit" id='submitBtn'>Submit</button>
-            
-        </form>
+        </div>
     </div>
     
 
-    <section id="bookingSection">
-        <h3>Signup for Comfort</h3>
-        <p>Everyone has the right to comfort. Book a room to enjoy comfort at its best from the best provider of comfort</p>
-        <button type="button" id="bookNowBtn">Book Now</button>
-    </section>
+   <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4"><h2 class="signuph2">SignUp for Comfort</h1></div>
+            </div>
+        </div>
+        
+        <div class=" container-fluid">
+            <div class="row">
 
-    <footer>
-        <div>Rest.</div>
-        <div>2020. All right reserved</div>
-        <div>34th Avenue, Ikeja, Lagos, Nigeria</div>
-    </footer>
+                <div class="col-sm-3"></div>
+
+                <div class="col-sm-6">
+                    <p class="signup-p">
+                        Everyone has right to comfort. Book a room to enjoy comfort at its best from the<br> best provider of comfort
+                    </p>
+                </div>
+            </div>
+        </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6 col">
+                        <input type="button" name="" value="Book Now">
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+            
+            <footer class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-4 col-right">
+                        <h3><span class="rest">Rest</span></h3>
+                    </div>
+                    <div class="col-sm-3 col">
+                        <p>2020. All Rights Reserved</p>
+                    </div>
+                    <div class="col-sm-4 col-left">
+                        <p>34th Avenue,Ikeja, Lagos, Nigeria.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
     <script src="./public/js/jquery-3.4.1.min.js"></script>
     <script src="./public/js/bootstrap.min.js"></script>

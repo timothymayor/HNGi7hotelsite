@@ -60,15 +60,7 @@ textarea {
 }
 
 @media (max-width: 600px) {
-  .contact-btn {
-    background-color: #0D3644 !important;
-    float: right;
-    width: 60%;
-    color: #fff;
-    padding: 0px;
-    margin-right: 20%;
-    border-radius: 0 !important;
-}
+  
   .col-left {
     margin-left: 0;
     text-align: center;
@@ -107,7 +99,7 @@ textarea {
 .form-div {
     text-align: center;
     width: 100%;
-    padding: 0em ;
+    padding: 0 0 2rem 0 ;
     margin: 10px;
     border: 1px solid pink;
 }
@@ -120,5 +112,14 @@ textarea {
     /*margin-top: 200px;*/
     font-family: Playfair Display;
     
+}
+.contact-btn {
+    background-color: #0D3644 !important;
+    float: right;
+    width: 60%;
+    color: #fff;
+    padding: 0px;
+    margin-right: 20%;
+    border-radius: 0 !important;
 }
 }

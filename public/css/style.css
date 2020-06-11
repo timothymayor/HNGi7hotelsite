@@ -169,7 +169,7 @@ color: rgba(13,54,68,0.6);}
  		 z-index: 1;
         }
     .play{
-        width: 32px;
+        width: 100px;
         height: 32px;
         position: absolute;
         top: 15em;
@@ -178,7 +178,6 @@ color: rgba(13,54,68,0.6);}
  		z-index: 1;
  		border-radius: 100%;
     }
-
     .arrow {
     	display: inline-block;
     	mask-image:url("../public/arrow.svg");

@@ -37,6 +37,9 @@ header{
     font-size: 32px;
     line-height: 64px;
     color: #0D3644;
+    text-decoration-style: solid;
+    text-decoration: underline;
+    text-decoration-color: #F6AE2D;
 }
 #logo{
     width: 73px;
@@ -77,7 +80,7 @@ nav li a:hover{
     grid-template-columns: 50% 50%;
     width: 100%;
     margin-top: 0px;
-    margin-bottom: 10em;
+    margin-bottom: 2.5em;
     height: auto;
 }
 #heading h2{
@@ -117,37 +120,121 @@ nav li a:hover{
     line-height: 24px;
     color: #0D3644;
     width: 75%;
-    text-align: justify;
-    margin-bottom: 5em;
+    text-align: left;
+    margin-bottom: 2.5em;
 }
 #roomGallery img{
     width: 100%;
     position: relative;
+    background: rgba(41, 41, 41, 0.4);
 }
 #regularRooms{
     display: flex;
     margin-bottom: 1em;
+    position: relative;
+}
+#regularRooms h3{
+    font-size: 1.5em;
+    margin: 5px;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    color: white;
+}
+#regularRooms p{
+    font-size: 0.75em;
+    margin: 0px;
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 600;
+    color: white;
+    color: rgba(255, 255, 255, 0.6);
+
 }
 #standardRoom{
     width: 100%;
     margin: 0px 0.5em 0px 0px;
+    position: relative;
+}
+#standardRoom div{
+    text-align: left;
+    position: absolute;
+    bottom: 3em;
+    left: 2em;
+}
+#standardRoom button{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+.price{
+    font-weight: bold;
+    color: white;
 }
 #silverRoom{
+    position: relative;
     width: 100%;
     margin: 0px 0px 0px 0.5em;
 }
+#silverRoom div{
+    text-align: left;
+    position: absolute;
+    bottom: 3em;
+    left: 2em;
+}
+#silverRoom button{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
 #goldRoom{
     width: 100%;
-}
-.bookRoomBtn{
     position: relative;
-    bottom: 175px;
-    left: 40px;
+}
+#goldRoom div{
+    text-align: left;
+    position: absolute;
+    bottom: 3em;
+    left: 2em;
+    
+}
+#goldRoom h3{
+    font-size: 1.5em;
+    margin: 5px;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    color: white;
+}
+#goldRoom p{
+    font-size: 0.75em;
+    margin: 0px;
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.6);
 }
 
-
-
-
+.bookRoomBtn{
+    position: absolute;
+    top: -45em;
+    right: -25em;
+    font-size: 0.9em;
+    padding: 1em 2.5em;
+    background: rgba(41, 41, 41, 0.4);
+    color: white;
+    border: 1px solid white;
+}
+#goldRoomBtn{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    font-size: 0.9em;
+    padding: 1em 2.5em;
+    background: rgba(41, 41, 41, 0.4);
+    color: white;
+    border: 1px solid white;
+}
 
 
 
@@ -166,7 +253,7 @@ nav li a:hover{
     padding-top: 5em;
     padding-bottom: 5em;
     background: rgba(243, 243, 243, 0.37);
-    margin: 5em 0em;
+    margin: 0em 0em;
 }
 #bookingSection h3{
     font-family: 'Playfair Display';
@@ -187,7 +274,7 @@ nav li a:hover{
     color: #0D3644;
 }
 #bookNowBtn{
-    width: 12.5%;
+    width: auto;
     height: auto;
     text-align: center;
     font-family: 'Muli Regular';
@@ -199,6 +286,7 @@ nav li a:hover{
     text-align: center;
     color: #FFFFFF;
     padding: 20px 40px;
+    border: none;
     margin-top: 40px;
 }
 footer{
@@ -213,8 +301,8 @@ footer{
     color: #0D3644;   
 }
 footer div:nth-child(1){
-    font-size: 1.2em;
-    line-height: 24px;
+    font-size: 2em;
+    line-height: 64px;
     padding-left: 6em;
     font-family: Playfair Display;
     font-style: normal;
@@ -224,23 +312,739 @@ footer div:nth-child(1){
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    text-decoration-style: solid;
+    text-decoration: underline;
+    text-decoration-color: #F6AE2D;
 }
 footer div:nth-child(2){
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 24px;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: bold;
+    font-weight: normal;
 }
 footer div:nth-child(3){
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 24px;
     padding-right: 6em;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    font-weight: bold;
+    font-weight: normal;
+}
+
+
+
+
+
+@media all and (min-width: 240px) and (max-width: 480px){
+    
+    header{
+        width: 100%;
+        margin: 0px;
+        padding: 0%;
+    
+    }
+    #logoDiv{
+        padding: 0.25em 1em;
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 64px;
+        color: #0D3644;
+    }
+    #logo{
+        width: 73px;
+        height: 64px;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+    }
+    nav li{
+        list-style-type: none;
+        margin: 2px 0px 2px 0px;
+        font-family: 'Muli Regular';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.2em;
+        line-height: 16px;
+        color: rgba(13, 54, 68, 0.6);
+        width: 100%;
+        
+    }
+    .navbar-toggler{
+        /* padding: 15px; */
+        margin: 15px;
+    }
+    nav li a{
+        text-decoration-line: none;
+        cursor: pointer;
+    }
+    nav li a:hover{
+        background-color: lightgreen;
+    }
+    #heading{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 2.5px;
+        height: auto;
+        align-items: center
+;    }
+    #heading h2{
+        padding: 0px 0px 0em 0em;
+        margin: 0px;
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2em;
+        color: #0D3644;
+    }
+    #hotelImageDiv{
+        display: none;
+    }
+
+
+
+    #roomGallery{
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+    }
+    .pitch{
+        font-family: Muli;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 0.75em;
+        line-height: 16px;
+        color: #0D3644;
+        width: 100%;
+        text-align: justify;
+        margin-bottom: 5em;
+    }
+    #roomGallery img{
+        width: 100%;
+        position: relative;
+    }
+    #regularRooms{
+        display: flex;
+        margin-bottom: 1em;
+    }
+    #regularRooms h3{
+        font-size: 0.5em;
+        margin: 0px;
+    }
+    #regularRooms p{
+        font-size: 0.5em;
+        margin: 0px;
+    }
+
+    #standardRoom{
+        margin: 0px 0.25em 0px 0em;
+    }
+    #silverRoom{
+        margin: 0px 0px 0px 0.25em;
+    }
+
+    #goldRoom{
+        margin-top: -3.5em;
+    }
+
+    .roomDetails{
+        text-align: left;
+        position: relative;
+        top: -4em;
+        right: -1em
+    }
+    
+    #goldRoom h3{
+        font-size: 0.5em;
+        margin: 0px;
+    }
+    #goldRoom p{
+        font-size: 0.5em;
+        margin: 0px;
+    }
+    .bookRoomBtn{
+        font-size: 0.5em;
+        top: -20em;
+        right: -8em;
+        font-size: 0.5em;
+        padding: 0.5em 1em;
+    }
+
+    #goldRoomBtn{
+        position: relative;
+        top: -16.5em;
+        right: -25em;
+        font-size: 0.5em;
+        padding: 0.5em 1em;
+    }
+
+
+    #bookingSection{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        align-items: center;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        margin: 2.5em 0em;
+    }
+    #bookingSection h3{
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        color: #0D3644;
+        margin-bottom: 0.5em;
+    }
+    #bookingSection p{
+        font-family: 'Muli Regular';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1em;
+        width: 90%;
+        margin: 0px 0px;
+        text-align: center;
+        color: #0D3644;
+    }
+    #bookNowBtn{
+        width: fit-content;
+        height: auto;
+        text-align: center;
+        font-family: 'Muli Regular';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1em;
+        padding: 7.5px 20px;
+        background-color: #F6AE2D;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 20px;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0em 0em 0em 0em;
+        width: 100%;
+        font-family: 'Muli Regular';
+        font-style: normal;
+        font-weight: normal;
+        color: #0D3644;   
+    
+    }
+    footer div:nth-child(1){
+        font-size: 2em;
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+        margin: 0px 5px;
+    }
+    footer div:nth-child(2){
+        font-size: 1em;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+        margin: 0px 5px;
+    }
+    footer div:nth-child(3){
+        font-size: 0.75em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+        margin: 0px 5px;
+        text-align: center;
+    }
+}
+@media all and (min-width: 481px) and (max-width: 769px){
+    
+    header{
+        width: 100%;
+        margin: 0px;
+        padding: 0%;
+    
+    }
+    #logoDiv{
+        padding: 0.25em 1.5em;
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 64px;
+        color: #0D3644;
+    }
+    #logo{
+        width: 73px;
+        height: 64px;
+    }
+    nav{
+        display: flex;
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+    }
+    nav li{
+        list-style-type: none;
+        margin: 2px 0px 2px 0px;
+        font-family: 'Muli Regular';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1em;
+        line-height: 16px;
+        color: rgba(13, 54, 68, 0.6);
+        width: 100%;
+        
+    }
+    .navbar-toggler{
+        /* padding: 15px; */
+        margin: 15px;
+    }
+    nav li a{
+        text-decoration-line: none;
+        cursor: pointer;
+    }
+    nav li a:hover{
+        background-color: lightgreen;
+    }
+    #heading{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 2.5px;
+        height: auto;
+        align-items: center
+;    }
+    #heading h2{
+        padding: 0px 0px 0em 0em;
+        margin: 0px;
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2em;
+        color: #0D3644;
+    }
+    #hotelImageDiv{
+        display: none;
+    }
+
+
+    #roomGallery{
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+    }
+    .pitch{
+        font-family: Muli;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.5em;
+        line-height: 24px;
+        color: #0D3644;
+        width: 100%;
+        text-align: justify;
+        margin-bottom: 5em;
+    }
+    #roomGallery img{
+        width: 100%;
+        position: relative;
+    }
+    #regularRooms{
+        display: flex;
+        margin-bottom: 0em;
+    }
+    #regularRooms h3{
+        font-size: 1em;
+        margin: 0px;
+    }
+    #regularRooms p{
+        font-size: 1em;
+        margin: 0px;
+    }
+    #standardRoom{
+        width: 100%;
+        margin: 0px 0.25em 0px 0px;
+    }
+    #silverRoom{
+        width: 100%;
+        margin: 0px 0px 0px 0.25em;
+    }
+    
+    #goldRoom{
+        width: 100%;
+        margin-top: -6em;
+    }
+    #goldRoom h3{
+        font-size: 1em;
+    }
+    #goldRoom p{
+        font-size: 1em;
+    }
+    .bookRoomBtn{
+        font-size: 1em;
+        top: -27em;
+        right: -13em;
+        font-size: 0.75em;
+        padding: 1em 1.5em;
+    }
+
+    .roomDetails{
+        text-align: left;
+        position: relative;
+        top: -7em;
+        right: -2em
+    }
+
+    #goldRoomBtn{
+        position: relative;
+        top: -18em;
+        right: -27em;
+        font-size: 0.9em;
+        padding: 1em 2.5em;
+        background: rgba(41, 41, 41, 0.4);
+        color: white;
+        border: 1px solid white;
+    }
+
+    
+    #bookingSection{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        align-items: center;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        margin: 2.5em 0em;
+    }
+    #bookingSection h3{
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        color: #0D3644;
+        margin-bottom: 0.5em;
+    }
+    #bookingSection p{
+        font-family: 'Muli Regular';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1em;
+        width: 90%;
+        margin: 0px 0px;
+        text-align: center;
+        color: #0D3644;
+    }
+    #bookNowBtn{
+        width: fit-content;
+        height: auto;
+        text-align: center;
+        font-family: 'Muli Regular';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1em;
+        padding: 7.5px 20px;
+        background-color: #F6AE2D;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0em 0em 0em 0em;
+        width: 100%;
+        font-family: 'Muli Regular';
+        font-style: normal;
+        font-weight: normal;
+        color: #0D3644;   
+        padding: 0px;
+    
+    }
+    footer div:nth-child(1){
+        font-size: 2em;
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+        margin: 0px 5px;
+    }
+    footer div:nth-child(2){
+        font-size: 1em;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+        margin: 0px 5px;
+        font-weight: bolder;
+    }
+    footer div:nth-child(3){
+        font-size: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+        margin: 0px 5px;
+        text-align: center;
+        font-weight: bolder;
+    }
+}
+@media all and (min-width: 770px) and (max-width: 1024px){    
+    header{
+        width: 100%;
+        margin: 0px;
+        padding: 0%;
+    
+    }
+    #logoDiv{
+        padding: 0.25em 1.5em;
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 64px;
+        color: #0D3644;
+    }
+    #logo{
+        width: 73px;
+        height: 64px;
+    }
+    nav{
+        display: flex;
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+    }
+    nav li{
+        list-style-type: none;
+        margin: 2px 2px 2px 0px;
+        font-family: 'Muli Regular';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.25em;
+        color: rgba(13, 54, 68, 0.6);        
+    }
+    .navbar-toggler{
+        padding: 15px;
+        margin: 0px;
+    }
+    nav li a{
+        text-decoration-line: none;
+        cursor: pointer;
+    }
+    nav li a:hover{
+        background-color: lightgreen;
+    }
+    #heading{    
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        height: auto;
+;    }
+    #heading h2{
+        padding: 0px 0px 0em 2em;
+        margin: 0px;
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2em;
+        color: #0D3644;
+    }
+    #hotelImageDiv{
+        display: flex;
+        justify-content: center;
+    }
+    
+
+    #roomGallery{
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+    }
+    .pitch{
+        font-family: Muli;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.5em;
+        line-height: 28px;
+        color: #0D3644;
+        width: 100%;
+        text-align: justify;
+        margin-bottom: 5em;
+    }
+    #roomGallery img{
+        width: 100%;
+        position: relative;
+    }
+    #regularRooms{
+        display: flex;
+        margin-bottom: 0em;
+    }
+    #regularRooms h3{
+        font-size: 1.5em;
+        margin: 0px;
+    }
+    #regularRooms p{
+        font-size: 1.5em;
+        margin: 0px;
+    }
+    #standardRoom{
+        width: 100%;
+        margin: 0px 0.5em 0px 0px;
+    }
+    #silverRoom{
+        width: 100%;
+        margin: 0px 0px 0px 0.5em;
+    }
+    
+    #goldRoom{
+        width: 100%;
+        margin-top: -6.5em;
+    }
+    #goldRoom h3{
+        font-size: 1.5em;
+    }
+    #goldRoom p{
+        font-size: 1.5em;
+    }
+    .bookRoomBtn{
+        font-size: 1.5em;
+        top: -30em;
+        right: -15em;
+        font-size: 0.9em;
+        padding: 1em 1.5em;
+    }
+
+    #goldRoomBtn{
+        position: relative;
+        top: -24em;
+        right: -40em;
+        font-size: 0.9em;
+        padding: 1em 2.5em;
+        background: rgba(41, 41, 41, 0.4);
+        color: white;
+        border: 1px solid white;
+    }
+    
+
+
+
+    #bookingSection{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        align-items: center;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+        margin: 2.5em 0em;
+    }
+    #bookingSection h3{
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        color: #0D3644;
+        margin-bottom: 0.5em;
+    }
+    #bookingSection p{
+        font-family: 'Muli Regular';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1em;
+        width: 90%;
+        margin: 0px 0px;
+        text-align: center;
+        color: #0D3644;
+    }
+    #bookNowBtn{
+        width: fit-content;
+        height: auto;
+        text-align: center;
+        font-family: 'Muli Regular';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1em;
+        padding: 7.5px 20px;
+        background-color: #F6AE2D;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0em 0em 0em 0em;
+        width: 100%;
+        font-family: 'Muli Regular';
+        font-style: normal;
+        font-weight: normal;
+        color: #0D3644;   
+    
+    }
+    footer div:nth-child(1){
+        font-size: 2.5em;
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+        margin: 0px 5px;
+        
+    }
+    footer div:nth-child(2){
+        font-size: 1.5em;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+        margin: 0px 5px;
+        font-weight: bolder;
+    }
+    footer div:nth-child(3){
+        font-size: 1.5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+        margin: 0px 5px;
+        text-align: center;
+        font-weight: bolder;
+    }
 }
 

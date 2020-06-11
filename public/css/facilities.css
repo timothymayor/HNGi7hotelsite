@@ -2,13 +2,24 @@ body{
 	width: 100%;
 	margin: 0px;
 }
-@font-face{
-	font-family: "Playfair Display";
-	src: url('../lib/PlayfairDisplay-VariableFont_wght.ttf') format('truetype'); 
-}
+@font-face {
+    font-family: 'Muli Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Muli Regular'), url('../lib/Muli-Regular.woff') format('woff');
+  }
+
 @font-face{
 	font-family: "Muli";
-	src: url('../lib/Muli-VariableFont_wght.ttf') format('truetype');
+	src: url('debuggerFonts/Muli-VariableFont_wght.ttf') format('truetype');
+}
+  
+  @font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Playfair Display'), url('../lib/playfair-display-v20-latin-regular.woff') format('woff');
+  }
 }
 @font-face{
 	font-family: "Lato";
@@ -16,15 +27,15 @@ body{
 }
 /*****************HEADER*******************/
 header {
-	width: 80%;
+	width: 100%;
 	margin:0 auto;
 }
+
 header{
     display: grid;
     grid-template-columns: 50% 50%;
-    margin: 0px 0px 0px 4%;
+    margin: 0px 0px 0px 0px;
     padding: 0%;
-
 }
 /*************Temitope***************/
 #logoDiv{
@@ -37,7 +48,10 @@ header{
     font-weight: bold;
     font-size: 32px;
     line-height: 64px;
-    color: #0D3644;
+	color: #0D3644;
+	text-decoration-style: solid;
+    text-decoration: underline;
+    text-decoration-color: #F6AE2D;
 }
 #logo{
     width: 73px;
@@ -70,7 +84,13 @@ nav li a:hover{
 }
 .navbar{
     padding-left: 0px;
+    justify-content: flex-end;
 }
+
+.nav-item {
+	text-align: center;
+}
+
 
 /***********Temitope***************/
 .restLogo {
@@ -95,7 +115,7 @@ color: rgba(13,54,68,0.6);}
     flex: 1;
     width: 128px;
     height: 24px;
-    font-family: Muli;
+    font-family: Muli Regular;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -164,7 +184,8 @@ color: rgba(13,54,68,0.6);}
 .facText{
 	padding-right: 30%;
 	margin:5em 12em 5em 12em;
-}
+    font-family: 'Muli';
+  }
 
 .facPic {
 	display: flex;
@@ -197,7 +218,7 @@ color: rgba(13,54,68,0.6);}
 	color:#0D3644;
 	}
 .every {
-	font-family: Lato;
+	font-family: 'Muli';
 	font-size: 14px;
 	opacity: 0.7;
 }
@@ -246,8 +267,7 @@ margin: 2px;
 
 	.facPic {
 		display: flex;
-		justify-content: space-aro}
-und;
+		justify-content: space-around}
 	}
 
 @media screen and (max-width: 1186px) {
@@ -265,6 +285,13 @@ und;
 		margin:20px;
 	}
 }
+
+@media screen and (max-width: 991px){
+	nav li {
+		font-size: 1.25em;
+	}
+}
+
 
 @media screen and (max-width: 800px) {
 		.bar, .live {

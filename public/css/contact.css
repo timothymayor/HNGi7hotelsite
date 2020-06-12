@@ -22,7 +22,7 @@ header{
     
 }
 .sp::before {
-    content: "______";
+    content: "";
     color: #F6AE2D;
     position: relative;
     top: -20px;
@@ -126,7 +126,7 @@ textarea {
     background-color: #0D3644 !important;
     float: right;
     width: 60%;
-    color: #fff;
+    color
     padding: 0px;
     margin-right: 20%;
     border-radius: 0 !important;

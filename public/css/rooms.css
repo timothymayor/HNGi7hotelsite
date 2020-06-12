@@ -9,6 +9,14 @@ header{
     
 
 }
+.roomDetails{
+        display: inline;
+        text-align: left;
+        position: relative;
+        top: -140px;
+        right: -1em
+    }
+
 #logoDiv{
     padding: 1em 0px 1em 3em;
     margin: 0px;
@@ -27,13 +35,6 @@ header{
 #logo{
     width: 73px;
     height: 64px;
-}
-.sp::before {
-    content: "";
-    color: #F6AE2D;
-    position: relative;
-    top: -18px;
-    margin: 0;
 }
 .heading{
     padding-top: 13rem;
@@ -55,10 +56,6 @@ header{
     display: flex;
     flex-direction: column;
     width: 75%;
-}
-.roomsimg {
-    width: 100%;
-    height: 50vh;
 }
 .pitch{
     font-family: Muli;
@@ -527,13 +524,6 @@ header{
         right: 13em;
         font-size: 0.75em;
         padding: 1em 1.5em;
-    }
-
-    .roomDetails{
-        text-align: left;
-        position: relative;
-        top: -7em;
-        right: -2em
     }
 
     #goldRoomBtn{

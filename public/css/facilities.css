@@ -7,16 +7,6 @@ header{
     width: 100%;
 
 }
-.title {
-  margin-top: 15rem;
-}
-
-.ssp::before {
-    content: "___";
-    color: #F6AE2D;
-    position: relative;
-    top: -20px;
-}
 .pad {
   margin: 80px 0;
 }

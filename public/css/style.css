@@ -19,6 +19,11 @@ header{
     width: 100%;
 
 }
+.sp::before{
+    content: "_______";
+    color: #F6AE2D;
+    font-weight: bold;
+}
 #logoDiv{
     padding: 1em 0px 1em 1.5em;
     margin: 0px;
@@ -156,6 +161,9 @@ color: rgba(13,54,68,0.6);
     .play {
         width: 50px;
         height: 50px;
+        padding: .8rem;
+        opacity: .8;
+        background: #fff;
         position: absolute;
         top: 15em;
         left: 40%;
@@ -221,7 +229,7 @@ color: rgba(13,54,68,0.6);
     }
 
     .active {
-        border-bottom: .2rem solid pink;
+        border-bottom: .1rem solid #0D3644;
     }
 
 .check {

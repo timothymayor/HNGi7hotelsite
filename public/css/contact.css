@@ -1,5 +1,17 @@
+body{
+    margin: 0;
+    padding: 0;
+}
 .frm-line {
     margin: 40px 0;
+}
+header{
+    display: grid;
+    grid-template-columns: 42% 58% !important;
+    margin: 0px 0px 0px 0%;
+    padding: 0%;
+    width: 100%;
+
 }
 .contact-btn {
     background-color: #0D3644 !important;
@@ -14,9 +26,14 @@
 .contact-title {
     margin-top: 200px;
     font-family: Playfair Display;
-    padding-left: 12%;
+    
 }
-
+.sp::before {
+    content: "___";
+    color: #F6AE2D;
+    position: relative;
+    top: -20px;
+}
 .input-text {
     width: 70%;
     padding: 0.3em;
@@ -52,7 +69,7 @@ textarea {
     width: 100%;
     padding: 2rem 1rem 2rem 2rem;
     margin-top: 100px;
-    border: 1px solid pink;
+    border: 1px solid #F6AE2D;
 }
 
 @media (min-width: 800px) {
@@ -101,15 +118,15 @@ textarea {
     width: 100%;
     padding: 0 0 2rem 0 ;
     margin: 10px;
-    border: 1px solid pink;
+    border: 1px solid #F6AE2D;
 }
 #nameLabel {
     display: block;
     text-align: center;
 }
 .contact-title {
-    text-align: center;
-    /*margin-top: 200px;*/
+    /*text-align: center;*/
+    margin-top: 20px;
     font-family: Playfair Display;
     
 }

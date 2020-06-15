@@ -1,18 +1,14 @@
+footer{
+  margin: 0 !important;
+  /*padding: 0 !important;*/
+}
+
 
 header{
-    display: grid;
     grid-template-columns: 42% 58% !important;
-    margin: 0px 0px 0px 0%;
-    padding: 0%;
-    width: 100%;
-
 }
 .pad {
-  margin: 80px 0;
-}
-
-.facImg {
-  width: 100%
+  margin: 70px 0;
 }
 
 .facImglandscape {
@@ -21,6 +17,6 @@ header{
 
 @media only screen and (max-width: 600px) {
   .title {
-  margin-top: 1rem;
-}
+    margin-top: 1rem;
+  }
 }

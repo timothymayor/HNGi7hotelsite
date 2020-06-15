@@ -1,11 +1,7 @@
 .frm-line {
     margin: 40px 0;
 }
-header{
-    display: grid;
-    grid-template-columns: 42% 58% !important;
 
-}
 .contact-btn {
     background-color: #0D3644 !important;
     float: right;

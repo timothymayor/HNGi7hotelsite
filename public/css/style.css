@@ -6,6 +6,13 @@ header{
     width: 100%;
 
 }
+.header-other-pages {
+    display: grid;
+    grid-template-columns: 42% 58% !important;
+     margin: 0px 0px 0px 0%;
+    padding: 0%;
+    width: 100%;
+}
 .header-image {
     width: 100%; height: 50vh;
 }
@@ -23,6 +30,10 @@ header{
     content: "___";
     color: #F6AE2D;
     font-weight: bold;
+}
+.facImglandscape {
+  width: 100%;
+  margin-top: .3rem;
 }
 #logoDiv{
     padding: 1em 0px 1em 1.5em;
@@ -91,7 +102,9 @@ color: rgba(13,54,68,0.6);
     list-style: none;
     color: #0D3644;
 }
-
+.pad {
+    margin: 80px 0;
+}
 .padding {
 	margin: 10px 0 50px 0;
 }

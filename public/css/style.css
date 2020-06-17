@@ -35,6 +35,9 @@ header{
   width: 100%;
   margin-top: .3rem;
 }
+.adjust {
+    margin: 0; padding: 0;
+}
 #logoDiv{
     padding: 1em 0px 1em 1.5em;
     margin: 0px;

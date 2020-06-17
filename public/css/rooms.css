@@ -1,91 +1,9 @@
-@font-face {
-    font-family: 'Muli Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Muli Regular'), url('../lib/Muli-Regular.woff') format('woff');
-  }
-header{
-    grid-template-columns: 42% 58% !important;
-    
-
-}
-.roomDetails{
-        display: inline;
-        text-align: left;
-        position: relative;
-        top: -140px;
-        right: -1em
-    }
-
-#logoDiv{
-    padding: 1em 0px 1em 3em;
-    margin: 0px;
-    display: flex;
-    align-items: center;
-    font-family: Playfair Display;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 64px;
-    color: #0D3644;
-    text-decoration-style: solid;
-    text-decoration: underline;
-    text-decoration-color: #F6AE2D;
-}
-#logo{
-    width: 73px;
-    height: 64px;
-}
-.heading{
-    padding-top: 13rem;
-}
-
-#hotelImageDiv{
-    display: flex;
-    /* justify-content: center; */
-}
-#hotelImageDiv img{
-    width: 100%;
-    height: 50%;
-    box-sizing: border-box;
-    /* width: 50%; */
-}
 
 
-#roomGallery{
-    display: flex;
-    flex-direction: column;
-    width: 75%;
-}
-.pitch{
-    font-family: Muli;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 1em;
-    line-height: 24px;
-    color: #0D3644;
-    width: 100%;
-    text-align: left;
-    margin: 10em 0;
-}
-#roomGallery img{
-    width: 100%;
-    position: relative;
-    background: rgba(41, 41, 41, 0.4);
-}
-#regularRooms{
-    display: flex;
-    margin-bottom: 1em;
-    position: relative;
-}
-#regularRooms h3{
-    font-size: 1.5em;
-    margin: 5px;
-    font-family: Playfair Display;
-    font-style: normal;
-    font-weight: bold;
-    color: white;
-}
+
+
+
+
 #regularRooms p{
     font-size: 0.75em;
     margin: 0px;
@@ -143,6 +61,15 @@ header{
     left: 2em;
     
 }
+.roomDetails{
+        display: inline;
+        text-align: left;
+        position: relative;
+        top: -140px;
+        color: #fff;
+        background-color: #000;
+        right: -1em
+    }
 #goldRoom h3{
     font-size: 1.5em;
     margin: 5px;
@@ -230,12 +157,7 @@ header{
     .heading{
     padding-top: 2rem;
 }
-    header{
-        width: 100%;
-        margin: 0px;
-        padding: 0%;
-    
-    }
+   
     #logoDiv{
         padding: 0.25em 1em;
         margin: 0px;
@@ -247,22 +169,6 @@ header{
         font-size: 32px;
         line-height: 64px;
         color: #0D3644;
-    }
-    #logo{
-        width: 73px;
-        height: 64px;
-    }
-    
-    .navbar-toggler{
-        /* padding: 15px; */
-        margin: 15px;
-    }
-    nav li a{
-        text-decoration-line: none;
-        cursor: pointer;
-    }
-    nav li a:hover{
-        background-color: lightgreen;
     }
    
     #hotelImageDiv{
@@ -329,22 +235,6 @@ header{
         font-size: 0.5em;
         margin: 0px;
     }
-    /*.bookRoomBtn{
-        font-size: 0.5em;
-        top: -20em;
-        right: -8em;
-        font-size: 0.5em;
-        padding: 0.5em 1em;
-    }*/
-
-    /*#goldRoomBtn{
-        position: relative;
-        top: -16.5em;
-        right: -25em;
-        font-size: 0.5em;
-        padding: 0.5em 1em;
-    }*/
-
 
     #bookingSection{
         display: flex;
@@ -392,76 +282,7 @@ header{
 }
 @media all and (min-width: 481px) and (max-width: 769px){
     
-    header{
-        width: 100%;
-        margin: 0px;
-        padding: 0%;
-    
-    }
-
-    #logoDiv{
-        padding: 0.25em 1.5em;
-        margin: 0px;
-        display: flex;
-        align-items: center;
-        font-family: Playfair Display;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 32px;
-        line-height: 64px;
-        color: #0D3644;
-    }
-    #logo{
-        width: 73px;
-        height: 64px;
-    }
-    /*nav{
-        display: flex;
-        text-align: center;
-        padding: 0px;
-        margin: 0px;
-    }*/
-    /*nav li{
-        list-style-type: none;
-        margin: 2px 0px 2px 0px;
-        font-family: 'Muli Regular';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 1em;
-        line-height: 16px;
-        color: rgba(13, 54, 68, 0.6);
-        width: 100%;
-        
-    }*/
-    .navbar-toggler{
-        /* padding: 15px; */
-        margin: 15px;
-    }
-    /*nav li a{
-        text-decoration-line: none;
-        cursor: pointer;
-    }
-    nav li a:hover{
-        background-color: lightgreen;
-    }*/
-    #heading{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin-top: 0px;
-        margin-bottom: 2.5px;
-        height: auto;
-        align-items: center
-;    }
-    #heading h2{
-        padding: 0px 0px 0em 0em;
-        margin: 0px;
-        font-family: Playfair Display;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 2em;
-        color: #0D3644;
-    }
+   
     #hotelImageDiv{
         display: none;
     }
@@ -581,57 +402,9 @@ header{
         margin-top: 20px;
         margin-bottom: 15px;
     }
-    footer{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin: 0em 0em 0em 0em;
-        width: 100%;
-        font-family: 'Muli Regular';
-        font-style: normal;
-        font-weight: normal;
-        color: #0D3644;   
-        padding: 0px;
-    
-    }
-    footer div:nth-child(1){
-        font-size: 2em;
-        font-family: Playfair Display;
-        font-style: normal;
-        font-weight: bold;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0px;
-        margin: 0px 5px;
-    }
-    footer div:nth-child(2){
-        font-size: 1em;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0px;
-        margin: 0px 5px;
-        font-weight: bolder;
-    }
-    footer div:nth-child(3){
-        font-size: 1em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0px;
-        margin: 0px 5px;
-        text-align: center;
-        font-weight: bolder;
-    }
 }
 @media all and (min-width: 770px) and (max-width: 1024px){    
-    header{
-        width: 100%;
-        margin: 0px;
-        padding: 0%;
-    
-    }
+   
     #logoDiv{
         padding: 0.25em 1.5em;
         margin: 0px;
@@ -755,47 +528,5 @@ header{
         margin-top: 20px;
         margin-bottom: 20px;
     }
-    footer{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin: 0em 0em 0em 0em;
-        width: 100%;
-        font-family: 'Muli Regular';
-        font-style: normal;
-        font-weight: normal;
-        color: #0D3644;   
     
-    }
-    footer div:nth-child(1){
-        font-size: 2.5em;
-        font-family: Playfair Display;
-        font-style: normal;
-        font-weight: bold;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0px;
-        margin: 0px 5px;
-        
-    }
-    footer div:nth-child(2){
-        font-size: 1.5em;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0px;
-        margin: 0px 5px;
-        font-weight: bolder;
-    }
-    footer div:nth-child(3){
-        font-size: 1.5em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0px;
-        margin: 0px 5px;
-        text-align: center;
-        font-weight: bolder;
-    }
 }
